@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gym Sales Optimization | LOFTIN VENTURES LLC</title>
+  <meta name="description" content="Loftin Ventures helps gym operators improve consult close rates, follow-up performance, and revenue per lead through sales optimization." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Loftin Ventures Home">
+        <div class="brand-mark">LOFTIN VENTURES</div>
+        <div class="brand-sub">Gym Sales Optimization Division</div>
+      </a>
+
+      <nav class="nav-links" aria-label="Division navigation">
+        <a href="#outcomes">Outcomes</a>
+        <a href="#what-we-fix">What We Fix</a>
+        <a href="#engagement">Engagement</a>
+        <a href="#contact" class="nav-cta">Request Audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="pill">Division: Gym Sales Optimization</p>
+
+        <h1>High-Performance Sales Optimization<br/>for Gym Operators</h1>
+
+        <p class="hero-sub">
+          Improve consult show rate, close rate, and revenue per lead by tightening scripts,
+          follow-up discipline, sales standards, and KPI management.
+        </p>
+
+        <div class="hero-cta-row">
+          <a class="btn-primary" href="#contact">Request Revenue Audit</a>
+          <a class="btn-ghost" href="index.html#divisions">Back to Divisions</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="outcomes" class="section">
+      <div class="container">
+        <h2>Outcomes</h2>
+        <p class="sublead">This division focuses on revenue outcomes driven by sales execution.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Higher Close Rate</h3>
+            <p class="card-sub">Cleaner consult flow, stronger objections, and tighter standards.</p>
+            <ul>
+              <li>Consult framework rebuild</li>
+              <li>Objection handling model</li>
+              <li>Roleplay & performance reinforcement</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Better Follow-Up Conversion</h3>
+            <p class="card-sub">Systemized follow-up that prevents leads from leaking.</p>
+            <ul>
+              <li>Same-day + 7–21 day cadence</li>
+              <li>Text/email scripts + sequencing</li>
+              <li>Pipeline management standards</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>More Revenue Per Lead</h3>
+            <p class="card-sub">Better offer clarity, pricing confidence, and consult execution.</p>
+            <ul>
+              <li>Offer clarity & positioning</li>
+              <li>Pricing presentation refinement</li>
+              <li>Simple upsell pathways</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-we-fix" class="section dark">
+      <div class="container">
+        <h2>What We Fix</h2>
+        <p class="sublead">Common reasons gyms underperform — and what gets optimized.</p>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span>1</span>
+            <h4>Weak Consult Structure</h4>
+            <p>Inconsistent flow, unclear value, and poor objection control.</p>
+          </div>
+
+          <div class="process-step">
+            <span>2</span>
+            <h4>Slow Response Time</h4>
+            <p>Speed-to-lead is a hidden close-rate killer.</p>
+          </div>
+
+          <div class="process-step">
+            <span>3</span>
+            <h4>No Follow-Up Discipline</h4>
+            <p>Leads aren’t “bad” — the process is incomplete.</p>
+          </div>
+
+          <div class="process-step">
+            <span>4</span>
+            <h4>No KPI Management</h4>
+            <p>No scorecard means no consistent performance.</p>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Focus:</strong> measurable sales performance — show rate, close rate, revenue per lead, and staff execution standards.
+        </div>
+      </div>
+    </section>
+
+    <section id="engagement" class="section">
+      <div class="container">
+        <h2>Engagement</h2>
+        <p class="sublead">A simple structure designed for speed and clarity.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Revenue Audit</h3>
+            <p class="card-sub">Baseline KPIs and isolate the biggest revenue constraint.</p>
+            <ul>
+              <li>Pipeline + KPI baseline</li>
+              <li>Consult + objections review</li>
+              <li>Follow-up review</li>
+              <li>Action plan + priorities</li>
+            </ul>
+          </div>
+
+          <div class="card featured">
+            <div class="tag">Common Next Step</div>
+            <h3>Optimization Install</h3>
+            <p class="card-sub">Implement scripts, cadence, standards, and KPI scorecards.</p>
+            <ul>
+              <li>Consult framework installation</li>
+              <li>Follow-up sequencing</li>
+              <li>Staff training cadence</li>
+              <li>Weekly KPI review rhythm</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Performance Advisory</h3>
+            <p class="card-sub">Ongoing optimization, training, and accountability.</p>
+            <ul>
+              <li>Weekly KPI review</li>
+              <li>Roleplay + call reviews</li>
+              <li>Standard reinforcement</li>
+              <li>Monthly performance plan</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section dark">
+      <div class="container contact-box">
+        <h2>Request a Revenue Audit</h2>
+        <p class="contact-sub">Email us to schedule and receive the KPI checklist.</p>
+
+        <div class="contact-actions">
+          <a class="btn-primary" href="mailto:loftinventures@gmail.com">Email loftinventures@gmail.com</a>
+          <a class="btn-ghost" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© LOFTIN VENTURES LLC</p>
+    </div>
+  </footer>
+
+</body>
+</html>
