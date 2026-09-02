@@ -2,8 +2,8 @@ import Link from "next/link";
 import { AnalyticsLink } from "@/components/analytics-link";
 
 const navigation = [
-  { href: "/#method", label: "Method" },
-  { href: "/#fit", label: "Who it’s for" },
+  { href: "/#included", label: "What you get" },
+  { href: "/#calculator", label: "Calculator" },
   { href: "/#investment", label: "Investment" },
 ] as const;
 

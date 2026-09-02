@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "JAY L² — Lose the weight. Keep the strength.",
+    default: "JAY L² — Change your body. Raise your standard.",
     template: "%s | JAY L²",
   },
   description: siteConfig.description,
@@ -21,20 +21,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: "JAY L²",
-    title: "JAY L² — Lose the weight. Keep the strength.",
+    title: "JAY L² — Change your body. Raise your standard.",
     description: siteConfig.description,
     images: [
       {
         url: "/jay-l2-campaign.jpg",
         width: 1536,
         height: 807,
-        alt: "JAY L² — Lose the weight. Keep the strength.",
+        alt: "JAY L² private lean-strength coaching.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "JAY L² — Lose the weight. Keep the strength.",
+    title: "JAY L² — Change your body. Raise your standard.",
     description: siteConfig.description,
     images: ["/jay-l2-campaign.jpg"],
   },

@@ -9,9 +9,9 @@
   --muted-light: #69665f;
   --line-dark: #2c2c28;
   --line-light: #cbc5ba;
-  --red: #b4241c;
-  --red-dark: #921a14;
-  --red-bright: #ff5b50;
+  --orange: #ff5a1f;
+  --orange-deep: #bd3a08;
+  --orange-bright: #ff7a2f;
   --max-width: 1200px;
   --side-padding: clamp(1.25rem, 4vw, 2.5rem);
   --section-space: clamp(5rem, 9vw, 8.5rem);
@@ -38,8 +38,8 @@ body {
 }
 
 ::selection {
-  background: var(--red);
-  color: var(--white);
+  background: var(--orange);
+  color: var(--ink);
 }
 
 a {
@@ -54,8 +54,18 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid #ff6c60;
+  outline: 3px solid var(--orange-bright);
   outline-offset: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
 }
 
 img {
@@ -160,7 +170,7 @@ h3 {
 .wordmark sup {
   position: relative;
   top: -0.38em;
-  color: var(--red-bright);
+  color: var(--orange-bright);
   font-size: 0.58em;
 }
 
@@ -199,11 +209,11 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  border: 1px solid var(--red);
+  border: 1px solid var(--orange);
   border-radius: 2px;
   padding: 0.95rem 1.25rem;
-  background: var(--red);
-  color: var(--white);
+  background: var(--orange);
+  color: var(--ink);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -217,8 +227,8 @@ h3 {
 }
 
 .button:hover {
-  border-color: var(--red-dark);
-  background: var(--red-dark);
+  border-color: var(--orange-bright);
+  background: var(--orange-bright);
   transform: translateY(-1px);
 }
 
@@ -271,14 +281,14 @@ h3 {
   color: var(--ink);
 }
 
-.section-red {
-  background: var(--red);
-  color: var(--white);
+.section-orange {
+  background: var(--orange);
+  color: var(--ink);
 }
 
 .eyebrow {
   margin-bottom: 1.1rem;
-  color: var(--red);
+  color: var(--orange-deep);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -286,9 +296,9 @@ h3 {
   text-transform: uppercase;
 }
 
-.section-red .eyebrow {
-  color: var(--white);
-  opacity: 0.72;
+.section-orange .eyebrow {
+  color: var(--ink);
+  opacity: 0.68;
 }
 
 .section-dark .eyebrow,
@@ -296,7 +306,7 @@ h3 {
 .section-dark .protocol-unit,
 .application-hero .application-facts span,
 .application-hero .next-steps li > span {
-  color: var(--red-bright);
+  color: var(--orange-bright);
 }
 
 .section-heading {
@@ -341,7 +351,7 @@ h3 {
 }
 
 .hero h1 {
-  max-width: 10.5ch;
+  max-width: 12.5ch;
   margin-bottom: 2rem;
   font-size: clamp(4rem, 8.5vw, 7.2rem);
   font-weight: 800;
@@ -352,7 +362,7 @@ h3 {
 
 .hero h1 span {
   display: block;
-  color: var(--paper);
+  color: var(--orange-bright);
 }
 
 .hero-lede {
@@ -363,6 +373,16 @@ h3 {
   line-height: 1.45;
 }
 
+.hero-promise {
+  max-width: 650px;
+  margin: 1.4rem 0 0;
+  color: var(--paper);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .microcopy {
   margin: 1.1rem 0 0;
   color: var(--muted-dark);
@@ -371,7 +391,7 @@ h3 {
 }
 
 .protocol-card {
-  border-top: 2px solid var(--red);
+  border-top: 2px solid var(--orange);
   border-bottom: 1px solid var(--line-dark);
   padding: 1.5rem 0 0;
 }
@@ -393,7 +413,7 @@ h3 {
 
 .protocol-unit {
   margin: 0.75rem 0 2.5rem;
-  color: var(--red);
+  color: var(--orange);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -470,7 +490,7 @@ h3 {
 
 .signal-index {
   grid-row: 1 / 3;
-  color: var(--red);
+  color: var(--orange-deep);
   font-size: 0.7rem;
   font-weight: 800;
 }
@@ -534,7 +554,7 @@ h3 {
 }
 
 .phase-number {
-  color: var(--red);
+  color: var(--orange);
   font-size: 0.72rem;
   font-weight: 800;
 }
@@ -576,7 +596,7 @@ h3 {
 }
 
 .included-list span {
-  color: var(--red);
+  color: var(--orange-deep);
   font-size: 0.7rem;
   font-weight: 800;
 }
@@ -605,7 +625,7 @@ h3 {
 
 .fit-label {
   margin-bottom: 2rem;
-  color: var(--red);
+  color: var(--orange-deep);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -632,7 +652,7 @@ h3 {
   left: 0;
   width: 6px;
   height: 6px;
-  background: var(--red);
+  background: var(--orange);
   content: "";
 }
 
@@ -668,7 +688,7 @@ h3 {
 }
 
 .price-block {
-  border-top: 2px solid var(--red);
+  border-top: 2px solid var(--orange);
   padding-top: 1.5rem;
 }
 
@@ -699,6 +719,294 @@ h3 {
   color: var(--muted-dark);
   font-size: 0.74rem;
   text-align: center;
+}
+
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line-light);
+  border-left: 1px solid var(--line-light);
+  list-style: none;
+}
+
+.deliverables-grid li {
+  min-height: 255px;
+  border-right: 1px solid var(--line-light);
+  border-bottom: 1px solid var(--line-light);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.deliverables-grid li > span {
+  display: block;
+  margin-bottom: 2.5rem;
+  color: var(--orange-deep);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.deliverables-grid h3 {
+  max-width: 14ch;
+  margin-bottom: 1rem;
+}
+
+.deliverables-grid p {
+  max-width: 36ch;
+  margin: 0;
+  color: var(--muted-light);
+  font-size: 0.94rem;
+}
+
+.method-compact .section-heading {
+  margin-bottom: 3rem;
+}
+
+.calculator-layout > .section-heading {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.calculator-card {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  border: 1px solid var(--line-light);
+  background: var(--paper);
+}
+
+.calculator-form,
+.calculator-result {
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.calculator-form {
+  border-right: 1px solid var(--line-light);
+}
+
+.calculator-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.calculator-form label,
+.height-field legend {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.calculator-form input,
+.calculator-form select {
+  width: 100%;
+  min-height: 54px;
+  border: 1px solid var(--line-light);
+  border-radius: 0;
+  padding: 0.8rem 1rem;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.calculator-form input::placeholder {
+  color: #918e86;
+}
+
+.calculator-form input:focus,
+.calculator-form select:focus {
+  border-color: var(--orange-deep);
+}
+
+.height-field {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.height-field > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.input-with-unit {
+  position: relative;
+  display: block;
+}
+
+.input-with-unit > span:last-child {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  color: var(--muted-light);
+  font-size: 0.72rem;
+  font-weight: 800;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+.input-with-unit input {
+  padding-right: 3rem;
+}
+
+.activity-field {
+  grid-column: 1 / -1;
+}
+
+.calculator-submit {
+  width: 100%;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.calculator-assumption {
+  margin: 0.85rem 0 0;
+  color: var(--muted-light);
+  font-size: 0.74rem;
+}
+
+.calculator-result {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.calculator-result-visible {
+  box-shadow: inset 4px 0 0 var(--orange);
+}
+
+.result-label {
+  margin-bottom: 1.5rem;
+  color: var(--orange-bright);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.result-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1.75rem;
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.result-numbers > div {
+  padding: 1.25rem 0.75rem;
+}
+
+.result-numbers > div + div {
+  border-left: 1px solid var(--line-dark);
+}
+
+.result-numbers strong,
+.result-numbers span {
+  display: block;
+}
+
+.result-numbers strong {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.result-numbers span {
+  margin-top: 0.5rem;
+  color: var(--muted-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.result-copy {
+  color: var(--muted-dark);
+  font-size: 0.9rem;
+}
+
+.result-placeholder {
+  color: var(--muted-dark);
+}
+
+.result-placeholder > span {
+  color: var(--orange-bright);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.result-placeholder strong {
+  display: block;
+  margin-block: 1rem;
+  color: var(--paper);
+  font-size: 5rem;
+  line-height: 0.8;
+}
+
+.result-placeholder p {
+  margin: 0;
+}
+
+.calculator-disclaimer {
+  grid-column: 1 / -1;
+  margin: 0;
+  border-top: 1px solid var(--line-light);
+  padding: 1rem clamp(1.5rem, 4vw, 3rem);
+  color: var(--muted-light);
+  font-size: 0.7rem;
+}
+
+.commitment-list {
+  display: grid;
+  max-width: 680px;
+  gap: 0.9rem;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.commitment-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--paper);
+}
+
+.commitment-list li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--orange);
+  content: "";
+}
+
+.proof-note {
+  max-width: 620px;
+  margin: 0;
+  border-top: 1px solid var(--line-dark);
+  padding-top: 1.25rem;
+  color: var(--muted-dark);
+  font-size: 0.82rem;
+}
+
+.button-dark {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.button-dark:hover {
+  border-color: var(--ink-soft);
+  background: var(--ink-soft);
 }
 
 .faq-grid {
@@ -737,7 +1045,7 @@ h3 {
 
 .faq-list summary::after {
   flex: 0 0 auto;
-  color: var(--red);
+  color: var(--orange-deep);
   content: "+";
   font-size: 1.5rem;
   font-weight: 400;
@@ -773,6 +1081,10 @@ h3 {
   margin-bottom: 2rem;
   color: var(--muted-dark);
   font-size: 1.1rem;
+}
+
+.final-cta.section-orange p:not(.eyebrow) {
+  color: rgba(10, 10, 9, 0.78);
 }
 
 .site-footer {
@@ -858,7 +1170,7 @@ h3 {
 .application-facts span,
 .next-steps li > span,
 .question-list span {
-  color: var(--red);
+  color: var(--orange);
   font-size: 0.7rem;
   font-weight: 800;
 }
@@ -870,7 +1182,7 @@ h3 {
 }
 
 .next-steps {
-  border-top: 2px solid var(--red);
+  border-top: 2px solid var(--orange);
 }
 
 .next-steps-label {
@@ -1044,6 +1356,23 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .deliverables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calculator-card {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-form {
+    border-right: 0;
+    border-bottom: 1px solid var(--line-light);
+  }
+
+  .calculator-result-visible {
+    box-shadow: inset 0 4px 0 var(--orange);
+  }
+
   .hero-grid {
     align-items: start;
   }
@@ -1129,6 +1458,21 @@ h3 {
   .fit-grid,
   .application-facts {
     grid-template-columns: 1fr;
+  }
+
+  .deliverables-grid,
+  .calculator-fields,
+  .result-numbers {
+    grid-template-columns: 1fr;
+  }
+
+  .deliverables-grid li {
+    min-height: 0;
+  }
+
+  .result-numbers > div + div {
+    border-top: 1px solid var(--line-dark);
+    border-left: 0;
   }
 
   .signal-grid > div,

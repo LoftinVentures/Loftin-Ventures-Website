@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "JAY L²",
   url: "https://www.loftinventures.com",
-  email: "loftinventures@gmail.com",
+  email: "lsquared.jay@gmail.com",
   location: "Westfield / Carmel, Indiana",
   description:
-    "Sixteen-week lean-strength coaching for busy fathers who want to lose fat without sacrificing hard-earned strength.",
+    "Sixteen weeks of private coaching for busy fathers ready to build a leaner, stronger body and a standard that lasts.",
 } as const;
 
 export const applicationQuestions = [

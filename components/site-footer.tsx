@@ -10,7 +10,7 @@ export function SiteFooter() {
             JAY L<sup>2</sup>
           </Link>
           <p className="footer-note">
-            Strength and leanness built for real life.
+            Change your body. Raise your standard.
           </p>
         </div>
         <div className="footer-links" aria-label="Legal links">
